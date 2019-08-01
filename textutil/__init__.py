@@ -11,8 +11,8 @@ import unicodedata
 
 def vwidth(astr):
     width = 0
-    for chr in astr:
-        if unicodedata.east_asian_width(chr) == 'W':
+    for char in astr:
+        if unicodedata.east_asian_width(char) == 'W':
             width += 2
         else:
             width += 1
@@ -21,8 +21,8 @@ def vwidth(astr):
 def vwrap(astr, width=70):
     lines = []
     line, w = '', 0
-    for chr in astr:
-        w += vwidth(chr); line += chr
+    for char in astr:
+        w += vwidth(char); line += char
         if w >= width:
             lines.append(line)
             line, w = '', 0
