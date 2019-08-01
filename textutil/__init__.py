@@ -10,6 +10,9 @@
 import unicodedata
 
 def vwidth(astr):
+    """Return the correct length of ASTR including half-width and
+    full-width characters.  This function is equivalent to a function
+    of Perl module, Text::VisualWidth::PP::width. """
     width = 0
     for char in astr:
         if unicodedata.east_asian_width(char) == 'W':
@@ -19,6 +22,9 @@ def vwidth(astr):
     return width
 
 def vwrap(astr, width=70):
+    """Wrap ASTR to multiple lines, each of which is at most WIDTH
+    characters.  The main difference between vwrap and textwrap.wrap
+    is how to count half-width and full-width characters."""
     lines = []
     line, w = '', 0
     for char in astr:
