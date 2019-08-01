@@ -12,7 +12,7 @@ This module is heavily inspired by a Perl module,
 Text::VisualWidth::PP, which provides functions to treat half-width
 and full-width characters.  For the details of this perl module,
 please refer to
-[https://metacpan.org/pod/Text::VisualWidth::PP](https://metacpan.org/pod/Text::VisualWidth::PP)
+[https://metacpan.org/pod/Text::VisualWidth::PP](https://metacpan.org/pod/Text::VisualWidth::PP).
 
 # EXAMPLE
 
