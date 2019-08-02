@@ -24,7 +24,7 @@ def vwidth(astr):
 def vwrap(astr, width=70):
     """Wrap ASTR to multiple lines, each of which is at most WIDTH
     characters.  The main difference between vwrap and textwrap.wrap
-    is how to count half-width and full-width characters."""
+    is how to count full-width characters."""
     lines = []
     line, w = '', 0
     for char in astr:
