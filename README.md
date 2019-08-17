@@ -28,6 +28,13 @@ textwrap.wrap('あいうえおかきくけこ', width=10) # ['あいうえおか
 vwrap('あいうえおかきくけこ', width=10)         # ['あいうえお', 'かきくけこ']
 ```
 
+# INSTALLATION
+
+```
+$ git clone https://github.com/r-nakamura/textutil
+$ pip3 install -e textutil
+```
+
 # SEE ALSO
 
 Text::VisualWidth::PP(3pm)
